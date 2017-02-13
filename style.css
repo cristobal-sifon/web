@@ -6,9 +6,41 @@ a
 
 body
 {
+  float: center;
+  text-align: center;
   background: white;
   color: black;
   font-family: sans-serif;
+}
+
+code.title
+{
+  margin-bottom:20pt;
+  margin-left: 10%;
+  float: left;
+  font-size: 60;
+  font-weight: 900;
+  text-align: left;
+  width:100%;
+}
+
+dd.list
+{
+  text-align: justify;
+}
+
+dl.help
+{
+  width: 100%;
+  text-align: justify;
+}
+
+dt.projectname
+{
+  margin-left: 3%;
+  color: black;
+  font-weight: bold;
+  text-decoration: underline
 }
 
 hr
@@ -16,15 +48,45 @@ hr
   width: 80%;
 }
 
+img.example
+{
+  border: 0;
+  margin-bottom: 10pt;
+  margin-top: 10pt;
+  width:100%;
+}
+
+img.projects
+{
+  border-color: white;
+  border-width: thick;
+  text-align: center;
+}
+
+p.body
+{
+  width: 80%;
+  text-align: justify;
+}
+
+p.header
+{
+<!--  float: left; -->
+  margin-left: 10%;
+  font-weight: 900;
+  font-size: 25;
+  color: blue;
+}
+
 p.title
 {
-  margin-bottom:20pt;
+  margin-bottom: 20pt;
   margin-left: 25%;
   float: left;
   font-size: 30;
   font-weight: 900;
   text-align: left;
-  width:100%;
+  width: 100%;
 }
 
 p.press
@@ -40,6 +102,12 @@ table.htable
   width: 80%;
   border: 1;
   background: gray;
+}
+
+table.research
+{
+  width: 75%;
+  text-align: justify;
 }
 
 /* Header Links */

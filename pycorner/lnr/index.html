@@ -3,68 +3,9 @@
   <meta name="AUTHOR" content="Crist&oacute;bal Sif&oacute;n Andalaft">
   <title>Linear regression in python by Crist&oacute;bal Sif&oacute;n</title>
 
-<style>
-a
-{
-  color: blue;
-  font-family: sans-serif;
-}
-body
-{
-  background: silver;
-  color: black;
-  font-family: sans-serif;
-}
-hr
-{
-  width: 50%;
-}
-code.title
-{
-  margin-bottom:20pt;
-  margin-left: 25%;
-  float: left;
-  font-size: 60;
-  font-weight: 900;
-  text-align: left;
-  width:100%;
-}
-dl.help
-{
-  width: 100%;
-  text-align: justify;
-}
-img.example
-{
-  border: 0;
-  margin-bottom: 10pt;
-  margin-top: 10pt;
-  width:100%;
-}
-table.htable
-{
-  text-align: center;
-  width: 50%;
-  border: 1;
-  background: gray;
-}
-/* Header Links */
-.hlink a:link {font-weight: bold;
-               color: blue;
-               text-decoration: none;}
-.hlink a:visited {font-weight: bold;
-                  color: blue;
-                  text-decoration: none;}
-.hlink a:hover {background: gray;
-                color: white;
-                font-weight: bold;
-                text-decoration: none;}
-.hlink a:active {font-weight: bold;
-                 color: blue;
-                 text-decoration: none;}
-</style>
-</head>
+  <link href="../../style.css" rel="stylesheet" type="text/css">
 
+</head>
 
 <body>
  <center>
@@ -74,19 +15,19 @@ table.htable
   <span class="hlink">
   <table class="htable">
     <td style="text-align:center;width:25%">
-      <a href="http://www.strw.leidenuniv.nl/~sifon/">
+      <a href="../../index.html">
       Home</a>
     </td>
     <td style="text-align:center;width:25%">
-      <a href="http://www.strw.leidenuniv.nl/~sifon/research.html">
+      <a href="../../research.html">
       Research</a>
     </td>
     <td style="text-align:center;width:25%">
-      <a href="http://www.strw.leidenuniv.nl/~sifon/pycorner.html">
+      <a href="../../pycorner.html">
       Python Corner</a>
     </td>
     <td style="text-align:center;width:25%">
-      <a href="http://www.strw.leidenuniv.nl/~sifon/links.html">
+      <a href="../../links.html">
       Useful Links</a>
     </td>
   </table>
@@ -95,11 +36,11 @@ table.htable
 
   <p><code class="title">lnr</code></p>
 
-  <p style="font-weight:bold;text-align:left;margin-left:27.5%">
-    <a href="lnr.py">Download</a>
+  <p style="font-weight:bold;text-align:left;margin-left:15%">
+    <a href="https://github.com/cristobal-sifon/lnr">View on github</a>
   </p>
 
-  <table style="width:50%;float:center">
+  <table style="width:50%;float:left;margin-left:10%">
     <tr>
       <td style="width:100%">
         <p style="text-align:justify">
@@ -115,9 +56,8 @@ table.htable
                 Bivariate, Correlated Errors and intrinsic Scatter.
                 The original Fortran code can be downloaded
                 <a href="http://www.astro.wisc.edu/~mab/archive/stats/stats.html">
-                here</a>. <b>Thanks to
-                <a href="http://www.astro.uni-bonn.de/m/schellen/home/">Gerrit
-                Schellenberger</a> for speeding up the bootstrap resampling.</b></li>
+                here</a>. Thanks to Gerrit Schellenberger (then at U Bonn)
+                for speeding up the bootstrap resampling.</li>
               <li><code><b>lnr.mle()</b></code><br>
                 A Maximum Likelihood Estimator</li>
               <li><code><b>lnr.mcmc()</b></code><br>

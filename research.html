@@ -1,77 +1,12 @@
 <html>
 <head>
-<meta name="AUTHOR" content="Crist&oacute;bal Sif&oacute;n Andalaft">
-<title>Crist&oacute;bal Sif&oacute;n's Research Page</title>
+  <meta name="AUTHOR" content="Crist&oacute;bal Sif&oacute;n Andalaft">
+  <title>Crist&oacute;bal Sif&oacute;n's Research Page</title>
+
+  <link href="style.css" rel="stylesheet" type="text/css">
+
 </head>
 
-<style>
-a
-{
-  color: blue;
-}
-body
-{
-  background: white;
-  font-family: sans-serif;
-  color: black;
-}
-table.htable
-{
-  text-align: center;
-  width: 50%;
-  border: 1;
-  background: gray;
-}
-hr
-{
-  width: 50%;
-}
-p
-{
-  width: 50%;
-  text-align: left;
-}
-p.header
-{
-  margin-left: 10%;
-  font-weight: 900;
-  font-size: 25;
-  color: blue;
-}
-dd.list
-{
-  text-align: justify;
-/*   width: 50%; */
-}
-img.projects
-{
-  border-color: white;
-  border-width: thick;
-  text-align: center;
-}
-.hlink a:link {font-weight: bold;
-               color: white;
-               text-decoration: none;}
-.hlink a:visited {font-weight: bold;
-                  color: white;
-                  text-decoration: none;}
-.hlink a:hover {background: gray;
-                color: white;
-                font-weight: bold;
-                text-decoration: none;}
-.hlink a:active {font-weight: bold;
-                 color: white;
-                 text-decoration: none;}
-.projects a:link {color: blue;
-                  font-weight: bold;}
-.projects a:visited {color: blue;
-                     font-weight: bold;}
-.projects a:hover {color: yellow;
-                   font-weight: bold;}
-.projects a:active {color: blue;
-                    font-weight: bold;}
-</style>
-</head>
 
 <body>
  <center>
@@ -81,19 +16,16 @@ img.projects
   <span class="hlink">
   <table class="htable">
     <td style="text-align:center;width:25%">
-      <a href="http://www.strw.leidenuniv.nl/~sifon/">Home</a>
-    </td>
-<!--    <td style="text-align:center;width:20%">
-      <a href="http://www.strw.leidenuniv.nl/~sifon/research.html">Publications</a>
-    </td>-->
-    <td style="text-align:center;width:25%">
-      <a href="http://www.strw.leidenuniv.nl/~sifon/research.html">Research</a>
+      <a href="index.html">Home</a>
     </td>
     <td style="text-align:center;width:25%">
-      <a href="http://www.strw.leidenuniv.nl/~sifon/pycorner.html">Python Corner</a>
+      <a href="research.html">Research</a>
     </td>
     <td style="text-align:center;width:25%">
-      <a href="http://www.strw.leidenuniv.nl/~sifon/links.html">Useful Links</a>
+      <a href="pycorner.html">Python Corner</a>
+    </td>
+    <td style="text-align:center;width:25%">
+      <a href="links.html">Useful Links</a>
     </td>
   </table>
   </span>
@@ -103,7 +35,7 @@ img.projects
   <p class="header">
   My Research Page
 
-  <p style="text-align:justify">
+  <p class="body">
   I focus on the study of galaxy clusters and the large scale structure. I am
   mainly involved in three projects: the Atacama Cosmology Telescope (ACT),
   the Canadian Cluster Comparison Project (CCCP), the Kilo-Degree Survey
@@ -116,12 +48,12 @@ img.projects
   Surveys
   <br><br>
 
-  <table class="hclass">
+  <table class="research">
    <span class="projects">
     <tr>
      <td style="width:60%">
       <dl style="text-align:left">
-       <dt style="margin-left:3%;color:blue;text-decoration:underline">
+       <dt class="projectname">
        Atacama Cosmology Telescope (ACT)
          <dd class="list">ACT is a 6-meter, millimeter-band telescope located
          in northern Chile. Its main objectives are to study the CMB in small
@@ -139,7 +71,7 @@ img.projects
     <tr>
      <td style="width:60%">
       <dl style="text-align:left">
-       <dt style="margin-left:3%;color:blue;text-decoration:underline">
+       <dt class="projectname">
        Canadian Cluster Comparison Project (CCCP)
          <dd class="list">The CCCP is a multi-wavelength study of about 50
          massive galaxy clusters, mainly through weak gravitational lensing
@@ -156,14 +88,14 @@ img.projects
     <tr>
      <td style="width:60%">
       <dl style="text-align:left">
-       <dt style="margin-left:3%;color:blue;text-decoration:underline">
+       <dt class="projectname">
        Kilo-Degree Survey (KiDS)
          <dd class="list">KiDS is one of the public surveys that is being
          observed with the VLT Survey Telescope. When completed, it will have
          observed 1,500 square degrees in two areas in the sky in the u, g, r,
          i bands with high image quality. The main science driver of the
          survey is the study of cosmic shear, meaning gravitational lensing by
-         large scale structure. To the right, a picture of the 2.2m VST,S
+         large scale structure. To the right, a picture of the 2.2m VST
          which is located in Chile.
      </td>
      <td style="width:40%">

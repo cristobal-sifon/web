@@ -1,103 +1,43 @@
+<!DOCTYPE html>
 <html>
-<head>
-<meta name="AUTHOR" content="Crist&oacute;bal Sif&oacute;n Andalaft">
-<title>Crist&oacute;bal Sif&oacute;n's Python Corner</title>
 
-<style>
-a
-{
-  color: blue;
-}
-body
-{
-  background: white;
-  font-family: sans-serif;
-  color: black;
-}
-table.htable
-{
-  text-align: center;
-  width: 50%;
-  border: 1;
-  background: gray;
-}
-hr
-{
-  width: 50%;
-}
-p
-{
-  width: 50%;
-  text-align: left;
-}
-p.header
-{
-  margin-left: 10%;
-  font-weight: 900;
-  font-size: 25;
-  color: blue;
-}
-dd.list
-{
-  text-align: justify;
-/*   width: 50%; */
-}
-img.centered
-{
-  text-align: center;
-}
-.hlink a:link {font-weight: bold;
-               color: white;
-               text-decoration: none;}
-.hlink a:visited {font-weight: bold;
-                  color: white;
-                  text-decoration: none;}
-.hlink a:hover {background: gray;
-                color: white;
-                font-weight: bold;
-                text-decoration: none;}
-.hlink a:active {font-weight: bold;
-                 color: white;
-                 text-decoration: none;}
-.codelist a:link {color: blue;}
-.codelist a:visited {color: blue;}
-.codelist a:hover {color: yellow;}
-.codelist a:active {color: blue;}
-</style>
+<head>
+    <meta name="AUTHOR" content="Crist&oacute;bal Sif&oacute;n Andalaft">
+    <title>Crist&oacute;bal Sif&oacute;n's Python Corner</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+
 </head>
 
 
 <body>
  <center>
 
-<!--  HEADER  -->
   <hr>
+
   <span class="hlink">
   <table class="htable">
     <td style="text-align:center;width:25%">
-      <a href="http://www.strw.leidenuniv.nl/~sifon/">Home</a>
-<!--    </td>
-    <td style="text-align:center;width:20%">
-      <a href="http://www.strw.leidenuniv.nl/~sifon/research.html">Publications</a>
-    </td>-->
+      <a href="index.html">Home</a>
     <td style="text-align:center;width:25%">
-      <a href="http://www.strw.leidenuniv.nl/~sifon/research.html">Research</a>
+      <a href="research.html">Research</a>
     </td>
     <td style="text-align:center;width:25%">
-      <a href="http://www.strw.leidenuniv.nl/~sifon/pycorner.html">Python Corner</a>
+      <a href="pycorner.html">Python Corner</a>
     </td>
     <td style="text-align:center;width:25%">
-      <a href="http://www.strw.leidenuniv.nl/~sifon/links.html">Useful Links</a>
+      <a href="links.html">Useful Links</a>
     </td>
   </table>
   </span>
   <hr>
 
+
 <!--  TITLE  -->
   <p class="header">
   My Python Corner
 
-  <p style="text-align:justify">
+  <p class="body">
   Python is one of the simplest, most flexible programming language, and the number of
   available resources is simply gigantic. Having (shortly) been through C and
   IDL (and IRAF), I don't hesitate when I have to recommend a programming
@@ -120,7 +60,7 @@ img.centered
 
 
   <br><br>
-  <table class="hclass">
+  <table style="width:80%;text-align:justify">
    <span class="codelist">
     <td style="width:50%">
       <dl style="text-align:left">
@@ -168,7 +108,7 @@ img.centered
 
   <table class="hclass">
    <span class="codelist">
-    <dl style="text-align:left;margin-left:5%">
+    <dl style="text-align:left;margin-left:10%">
      <dt><a href="http://www.python.org"><code><strong>python.org</strong></code></a>
         &nbsp;&nbsp;&nbsp;
         Python webpage
@@ -191,7 +131,7 @@ img.centered
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         Python with improved performance
      <dt><a href="http://www.astropy.org/"><code><strong>Astropy</strong></code></a>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         A Community Python Library for Astronomy
      <dt><a href="http://astlib.sourceforge.net/"><code><strong>astLib</strong></code></a>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
