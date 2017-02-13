@@ -1,0 +1,52 @@
+\documentclass[11pt,twoside,openright,b5paper]{book}
+%\documentclass[draft,11pt,twoside,openright,b5paper]{book}
+
+\input{packages}
+\input{definitions}
+\input{style}
+
+% \newcommand{\fig}{fig}
+
+\begin{document}
+\pagenumbering{roman}
+\setcounter{page}{1}
+\selectlanguage{english}
+
+\title{Mass and Light in Galaxy Clusters}
+\author{Crist\'obal Sif\'on Andalaft}
+
+\input{titlepage}
+
+\selectlanguage{english}
+
+\tableofcontents
+
+% \input{acronym}
+
+\include{introduction}
+
+\include{chapt/chapter2}
+
+\include{alignments/chapter3}
+
+\include{lensing_kids/chapter4}
+
+% \selectlanguage{dutch}
+% \include{samenvatting}
+
+% \selectlanguage{english}
+
+% \input{bibliography}
+
+%\selectlanguage{dutch}
+% \input curriculum
+
+%%\include publications
+%\chapter*{List of publications}
+% \addcontentsline{toc}{chapter}{List of publications}
+
+%\selectlanguage{dutch}
+\input{acknowledgements}
+
+\end{document}
+

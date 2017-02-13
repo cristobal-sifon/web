@@ -1,0 +1,178 @@
+<html>
+<head>
+  <meta name="AUTHOR" content="Crist&oacute;bal Sif&oacute;n Andalaft">
+  <title>readfile.header help file -- by Crist&oacute;bal Sif&oacute;n</title>
+<style>
+a
+{
+  color: blue;
+  font-family: sans-serif;
+}
+body
+{
+  background: silver;
+  color: black;
+  font-family: sans-serif;
+}
+hr
+{
+  width: 50%;
+}
+code.title
+{
+  margin-bottom:20pt;
+  margin-left: 25%;
+  float: left;
+  font-size: 60;
+  font-weight: 900;
+  text-align: left;
+  width:100%;
+}
+dl.help
+{
+  width: 100%;
+  text-align: justify;
+}
+img.example
+{
+  border: 0;
+  margin-bottom: 10pt;
+  margin-top: 10pt;
+  width:100%;
+}
+table.htable
+{
+  text-align: center;
+  width: 50%;
+  border: 1;
+  background: gray;
+}
+/* Header Links */
+.hlink a:link {font-weight: bold;
+               color: blue;
+               text-decoration: none;}
+.hlink a:visited {font-weight: bold;
+                  color: blue;
+                  text-decoration: none;}
+.hlink a:hover {background: gray;
+                color: white;
+                font-weight: bold;
+                text-decoration: none;}
+.hlink a:active {font-weight: bold;
+                 color: blue;
+                 text-decoration: none;}
+</style>
+</head>
+
+
+<body>
+ <center>
+
+<!--  HEADER  -->
+  <hr>
+  <span class="hlink">
+  <table class="htable">
+    <td style="text-align:center;width:25%">
+      <a href="http://www.strw.leidenuniv.nl/~sifon/">
+      Home</a>
+    </td>
+    <td style="text-align:center;width:25%">
+      <a href="http://www.strw.leidenuniv.nl/~sifon/research.html">
+      Research</a>
+    </td>
+    <td style="text-align:center;width:25%">
+      <a href="http://www.strw.leidenuniv.nl/~sifon/pycorner.html">
+      Python Corner</a>
+    </td>
+    <td style="text-align:center;width:25%">
+      <a href="http://www.strw.leidenuniv.nl/~sifon/links.html">
+      Useful Links</a>
+    </td>
+  </table>
+  </span>
+  <hr>
+
+  <p><code class="title">readfile.header</code></p>
+
+  <table style="width:50%;float:center">
+    <tr>
+      <td style="width:100%">
+        <p style="text-align:justify">
+          <code><strong>readfile.header</strong></code> creates a list of 
+            strings containing the selected-column names from an ASCII file. 
+            Mostly useful by calling <code>readfile.dict</code>.
+
+<!--   USAGE   -->
+        <p style="font-weight:bold;text-align:left;margin-left:5%">
+          Calling sequence:
+        </p>
+        <p style="margin-left:10%">
+          <code>&gt; head = readfile.header(file, *optional_args)</code>
+        </p>
+
+      <hr style="width:20%;float:left"><br></hr>
+
+      <font style="margin-left:2%">Arguments:</font>
+      <br>
+      <dl class="help">
+        <dt><code><strong>file</strong></code>
+          <dd><code>type: </code>string
+          <dd><code>parameter: </code>Name of the file. File should be a table 
+            with objects of arbitrary type (same per column). If 
+            <code>cols</code> is specified, the file can have incomplete
+            lines (that are after the columns to be read) or extra columns 
+            (e.g., comments at the end of a line).
+      </dl>
+
+      <font style="margin-left:2%">Optional:</font>
+      <br>
+      <dl class="help">
+        <dt><code><strong>cols</strong></code>
+          <dd><code>type: </code>int or list of ints
+          <dd><code>default: </code>'all'
+          <dd><code>parameter: </code>Column(s) to be returned. Numbering 
+            starts with <code>0</code>.
+        <dt><code><strong>linenum</strong></code>
+          <dd><code>type: </code>int
+          <dd><code>default: </code>1
+          <dd><code>parameter: </code>The number of the line in which the header
+            is located. Starts counting at 1 (not 0). This is useful when there
+            are comments before the actual column names.
+        <dt><code><strong>lower</strong></code>
+          <dd><code>type: </code>bool
+          <dd><code>default: </code>False
+          <dd><code>parameter: </code>Whether to return all column names in
+            lower case (if True), or keep the names exactly as they are in the
+            file (if False).
+        <dt><code><strong>mode</strong></code>
+          <dd><code>type: </code>{'1', '2'}
+          <dd><code>default: </code>'1'
+          <dd><code>parameter: </code>mode '1' means column names are given in 
+            the first line, separated by spaces; mode '2' means they are given 
+            in separate lines at the top of the file with column numbers, as in 
+            SExtractor outputs. Note that   the latter headers usually enumerate 
+            the columns starting from 1, which is accounted for.
+        <dt><code><strong>removechar</strong></code>
+          <dd><code>type: </code>string
+          <dd><code>default: </code>'#'
+          <dd><code>parameter: </code>Character to be removed from the 
+            beginning of the header, which should be defined in the first line 
+            with column names separated by <code>delimiter</code>. This is 
+            useful because usually the header stars with a special character so 
+            that it is not included in the table, but this character is not a 
+            column name.
+        <dt><code><strong>sep</strong></code>
+          <dd><code>type: </code>str
+          <dd><code>default: </code>' '
+          <dd><code>parameter: </code>Character or characters that separate
+            column names. Default is a blank space (or spaces).
+        </dl>
+  </table>
+
+<hr>
+<p style="bold;text-align:left;margin-left:25%">
+(c) Crist&oacute;bal Sif&oacute;n<br>
+Last Updated May 2, 2013
+
+</body>
+</html>

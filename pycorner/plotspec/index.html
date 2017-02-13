@@ -1,0 +1,244 @@
+<html>
+<head>
+  <meta name="AUTHOR" content="Crist&oacute;bal Sif&oacute;n Andalaft">
+  <title>plotspec by Crist&oacute;bal Sif&oacute;n</title>
+
+<style>
+a
+{
+  color: blue;
+  font-family: sans-serif;
+}
+body
+{
+  background: silver;
+  color: black;
+  font-family: sans-serif;
+}
+hr
+{
+  width: 50%;
+}
+code.title
+{
+  margin-bottom:20pt;
+  margin-left: 25%;
+  float: left;
+  font-size: 60;
+  font-weight: 900;
+  text-align: left;
+  width:100%;
+}
+dl.help
+{
+  width: 100%;
+  text-align: justify;
+}
+img.example
+{
+  border: 0;
+  margin-bottom: 10pt;
+  margin-top: 10pt;
+  width:100%;
+}
+table.htable
+{
+  text-align: center;
+  width: 50%;
+  border: 1;
+  background: gray;
+}
+/* Header Links */
+.hlink a:link {font-weight: bold;
+               color: blue;
+               text-decoration: none;}
+.hlink a:visited {font-weight: bold;
+                  color: blue;
+                  text-decoration: none;}
+.hlink a:hover {background: gray;
+                color: white;
+                font-weight: bold;
+                text-decoration: none;}
+.hlink a:active {font-weight: bold;
+                 color: blue;
+                 text-decoration: none;}
+</style>
+</head>
+
+
+<body>
+ <center>
+
+<!--  HEADER  -->
+  <hr>
+  <span class="hlink">
+  <table class="htable">
+    <td style="text-align:center;width:25%">
+      <a href="http://www.strw.leidenuniv.nl/~sifon/">
+      Home</a>
+    </td>
+    <td style="text-align:center;width:25%">
+      <a href="http://www.strw.leidenuniv.nl/~sifon/research.html">
+      Research</a>
+    </td>
+    <td style="text-align:center;width:25%">
+      <a href="http://www.strw.leidenuniv.nl/~sifon/pycorner.html">
+      Python Corner</a>
+    </td>
+    <td style="text-align:center;width:25%">
+      <a href="http://www.strw.leidenuniv.nl/~sifon/links.html">
+      Useful Links</a>
+    </td>
+  </table>
+  </span>
+  <hr>
+
+  <p><code class="title">plotspec</code></p>
+
+  <p style="font-weight:bold;text-align:left;margin-left:27.5%">
+    <a href="plotspec.gz">Download</a>
+  </p>
+
+  <table style="width:50%;float:center">
+   <tr>
+    <td style="width:100%">
+      <p style="text-align:justify">
+        <code><strong>plotspec</strong></code> is a simple, 
+        stand-alone, spectral plotting tool. It allows the display of one or 
+        several 1d spectra below the corresponding 2d
+        spectrum, with both plots matched in wavelength. It can also display
+        the location of emission and/or absorption lines that can either be 
+        supplied by the user or taken from the default set incorporated in the
+        code. Additionally, these lines can be redshifted by a user-supplied 
+        value. At the bottom of this page you'll find examples of an
+        emission-line and an absorption-line example spectra. You can
+        download the data that was used to create the plots shown by clicking 
+        in the figures.
+
+        <p style="font-weight:bold;text-align:left;margin-left:5%">Usage:</p>
+        <p style="text-align:left;margin-left:10%"><code>./plotspec 
+          &lt;parameter1&gt;=&lt;value1&gt; 
+          &lt;parameter2&gt;=&lt;value2&gt;</code> 
+          ...</p>
+
+      <p>The code takes the following command-line 
+        parameters:
+      </p>
+      <br>
+
+      <font style="margin-left:2%">Arguments:</font>
+      <br>
+      <dl class="help">
+	<dt><code><strong>file1d</strong></code>
+	  <dd><code>type: </code> string
+	  <dd><code>parameter: </code>If <code>fileroot</code> is provided, then this is the suffix of the 1d spectrum
+          file, with root <code>fileroot</code>. Otherwise, this is the full 
+          name of the 1d spectrum. The <code>".fits"</code>
+          extension is automatically added to the end of the filename.
+      </dl>
+
+      <font style="margin-left:2%">Optional:</font>
+      <br>
+      <dl class="help">
+	<dt><code><strong>file2d</strong></code>
+	  <dd><code>type: </code>string
+	  <dd><code>default: </code>' '
+	  <dd><code>parameter: </code>If <code>fileroot</code> is provided, then this is the suffix of the 2d spectrum
+          file, with root <code>fileroot</code>. Otherwise, this is the full 
+          name of the 2d spectrum.
+          The <code>".fits"</code> extension is automatically added to the
+          end of the filename. If this is not provided, only the 1d spectrum 
+          is displayed.
+	<dt><code><strong>fileroot</strong></code>
+	  <dd><code>type: </code>string
+	  <dd><code>default: </code>''
+	  <dd><code>parameter: </code>A root common to the 1d spectrum filename and the 2d spectrum filename.
+              If <code>fileroot</code> is provided but not <code>file1d</code> or <code>file2d</code>, 
+              <code>file1d=fileroot+'e'</code> and <code>file1d=fileroot+'s'</code>.
+	<dt><code><strong>z</strong></code>
+	  <dd><code>type: </code>float
+	  <dd><code>default: </code>0
+	  <dd><code>parameter: </code>The redshift to which the lines will be moved, i.e. this should be the
+              redshift you expect the source to be at.
+	<dt><code><strong>cz</strong></code>
+	  <dd><code>type: </code>float
+	  <dd><code>default: </code>0
+	  <dd><code>parameter: </code>The cosmological velocity, <code>c*z</code>, to which the lines will be
+              moved (if <code>z</code> is provided, this entry is ignored). Note: <code>c = 299792.458 km/s</code>.
+	<dt><code><strong>dv</strong></code>
+	  <dd><code>type: </code>float
+	  <dd><code>default: </code>500
+	  <dd><code>parameter: </code>The width of the lines to be shown, in km/s.
+	<dt><code><strong>figtitle</strong></code>
+	  <dd><code>type: </code>string
+	  <dd><code>default: </code>''
+	  <dd><code>parameter: </code>A title to print in the plot (e.g. the name of the object).
+              Only takes non-spaced strings for now.
+	<dt><code><strong>linefile</strong></code>
+	  <dd><code>type: </code>string
+	  <dd><code>default: </code>''
+	  <dd><code>parameter: </code>Text file containing the lines that will be plotted with the spectrum.
+              The format of the file is two columns (space-or tab-separated), the first being the rest-frame
+              wavelength and the second being the name of the line. Lines can be
+	      commented with the '#' character. If the file is not provided, a default set of lines
+	      including the most common ones (from ~100 to ~700 nm) will be displayed.
+	<dt><code><strong>tickspace</strong></code>
+	  <dd><code>type: </code>int
+	  <dd><code>default: </code>500
+	  <dd><code>parameter: </code>Separation between ticks in the plot, in Angstrom.
+	<dt><code><strong>z1</strong></code>
+	  <dd><code>type: </code>float
+	  <dd><code>default: </code>None
+	  <dd><code>parameter: </code>Lower limit, in counts, to plot. If not provided it is automatically
+              calculated as in ds9's zscale.
+	<dt><code><strong>z2</strong></code>
+	  <dd><code>type: </code>float
+	  <dd><code>default: </code>None
+	  <dd><code>parameter: </code>Upper limit, in counts, to plot. If not provided it is automatically
+              calculated as in ds9's zscale.
+	<dt><code><strong>contrast</strong></code>
+	  <dd><code>type: </code>float
+	  <dd><code>default: </code>0.6
+	  <dd><code>parameter: </code>The contrast of the 2d image, as in ds9.
+	<dt><code><strong>thresh</strong></code>
+	  <dd><code>type: </code>float
+	  <dd><code>default: </code>20
+	  <dd><code>parameter: </code>Threshold, in units of sigma, to remove bad pixels from the 1d spectrum.
+              Make it higher if you expect strong emission lines. Only works for very <i>high</i> pixels (as
+              opposed to very <i>negative</i> ones).
+	<dt><code><strong>linefill</strong></code>
+	  <dd><code>type: </code>float between 0 and 1
+	  <dd><code>default: </code>0.8
+	  <dd><code>parameter: </code>Greyscale color of the shading around each line (with width equal to
+              <code>dv</code>), where 0 is black and 1 is white.
+	<dt><code><strong>lheight</strong></code>
+	  <dd><code>type: </code>float between 0 and 1
+	  <dd><code>default: </code>0.2
+	  <dd><code>parameter: </code>Relative height at which to place the names of the lines, with respect
+              to the maximum value of the spectrum.
+      </dl>
+    </td>
+   </tr>
+   <tr>
+    <td>
+      <p style="text-align:center">
+       Click the images for examples:
+      </p>
+      <a href="sample_em.html">
+       <img src="sample_em.png" class="example">
+      </a>
+      <a href="sample_ab.html">
+       <img src="sample_ab.png" class="example">
+      </a>
+    </td>
+   </tr>
+  </table>
+
+<hr>
+<p style="bold;text-align:left;margin-left:25%">
+(c) Crist&oacute;bal Sif&oacute;n<br>
+Last Updated April 22, 2013
+
+ </center>
+</body>
+</html>

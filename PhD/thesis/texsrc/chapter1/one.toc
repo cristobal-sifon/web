@@ -1,0 +1,8 @@
+\select@language {english}
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Galaxy clusters in a nutshell}{2}{section.1.1}
+\contentsline {section}{\numberline {1.2}Mass proxies and cosmological leverage}{3}{section.1.2}
+\contentsline {section}{\numberline {1.3}Mass and light in cluster galaxies}{4}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Tidal effects on cluster galaxies}{6}{subsection.1.3.1}
+\contentsline {section}{\numberline {1.4}This thesis}{7}{section.1.4}

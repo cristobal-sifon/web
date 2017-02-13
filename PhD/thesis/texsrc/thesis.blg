@@ -1,0 +1,65 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: thesis.aux
+The style file: mnras.bst
+A level-1 auxiliary file: chapter1/introduction.aux
+A level-1 auxiliary file: chapter2/chapter2.aux
+A level-1 auxiliary file: chapter3/chapter3.aux
+A level-1 auxiliary file: chapter4/chapter4.aux
+A level-1 auxiliary file: chapter5/chapter5.aux
+Reallocated field_info (elt_size=4) to 16016 items from 5000.
+Database file #1: bibliography.bib
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+Reallocated str_pool (elt_size=1) to 195000 items from 130000.
+Warning--I didn't find a database entry for "Franquin"
+Warning--I didn't find a database entry for "rvsao"
+Warning--I didn't find a database entry for "vanderburg13"
+Warning--I didn't find a database entry for "navarro95"
+Warning--I didn't find a database entry for "vanuitert15"
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--empty publisher in binney87
+Warning--empty publisher in mo10
+Warning--empty publisher in sersic68
+You've used 403 entries,
+            2881 wiz_defined-function locations,
+            3735 strings with 162101 characters,
+and the built_in function-call counts, 190090 in all, are:
+= -- 15516
+> -- 14029
+< -- 818
++ -- 6221
+- -- 2054
+* -- 24799
+:= -- 29757
+add.period$ -- 0
+call.type$ -- 403
+change.case$ -- 806
+chr.to.int$ -- 386
+cite$ -- 406
+duplicate$ -- 9032
+empty$ -- 9017
+format.name$ -- 3302
+if$ -- 32325
+int.to.chr$ -- 18
+int.to.str$ -- 0
+missing$ -- 405
+newline$ -- 1222
+num.names$ -- 2696
+pop$ -- 2000
+preamble$ -- 1
+purify$ -- 1612
+quote$ -- 0
+skip$ -- 5175
+stack$ -- 0
+substring$ -- 10832
+swap$ -- 4988
+text.length$ -- 1623
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 3618
+warning$ -- 3
+while$ -- 2975
+width$ -- 0
+write$ -- 4051
+(There were 8 warnings)

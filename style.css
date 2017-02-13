@@ -1,0 +1,78 @@
+a
+{
+  color: blue;
+  font-family: sans-serif;
+}
+
+body
+{
+  background: white;
+  color: black;
+  font-family: sans-serif;
+}
+
+hr
+{
+  width: 80%;
+}
+
+p.title
+{
+  margin-bottom:20pt;
+  margin-left: 25%;
+  float: left;
+  font-size: 30;
+  font-weight: 900;
+  text-align: left;
+  width:100%;
+}
+
+p.press
+{
+  color: red;
+  width: 70%;
+  font-weight: bold;
+}
+
+table.htable
+{
+  text-align: center;
+  width: 80%;
+  border: 1;
+  background: gray;
+}
+
+/* Header Links */
+.hlink a:link {font-weight: bold;
+               color: white;
+               text-decoration: none;}
+.hlink a:visited {font-weight: bold;
+                  color: white;
+                  text-decoration: none;}
+.hlink a:hover {background: gray;
+                color: white;
+                font-weight: bold;
+                text-decoration: none;}
+.hlink a:active {font-weight: bold;
+                 color: white;
+                 text-decoration: none;}
+
+/* Contact information  */
+.contact a:link {color: blue;
+                 font-style: italic;}
+.contact a:visited {color: blue;
+                    font-style: italic;}
+.contact a:hover {color: blue;
+                  font-style: italic;}
+.contact a:active {color: blue;
+                   font-style: italic;}
+
+/* Press Release links */
+.press a:link {color: blue;
+               text-decoration: underline;}
+.press a:visited {color: blue;
+                  text-decoration: underline;}
+.press a:hover {color: blue;
+                text-decoration: underline;}
+.press a:active {color: blue;
+                 text-decoration: underline;}

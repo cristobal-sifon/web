@@ -1,0 +1,53 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: chapter5/five.aux
+The style file: mnras.bst
+A level-1 auxiliary file: chapter5/chapter5.aux
+Database file #1: bib5.bib
+Warning--I didn't find a database entry for "vanuitert15"
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--empty publisher in binney87
+Warning--empty publisher in mo10
+You've used 82 entries,
+            2881 wiz_defined-function locations,
+            1385 strings with 44538 characters,
+and the built_in function-call counts, 37893 in all, are:
+= -- 3193
+> -- 2678
+< -- 136
++ -- 1201
+- -- 366
+* -- 5000
+:= -- 5829
+add.period$ -- 0
+call.type$ -- 82
+change.case$ -- 164
+chr.to.int$ -- 81
+cite$ -- 84
+duplicate$ -- 1819
+empty$ -- 1826
+format.name$ -- 626
+if$ -- 6457
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 84
+newline$ -- 259
+num.names$ -- 522
+pop$ -- 416
+preamble$ -- 1
+purify$ -- 328
+quote$ -- 0
+skip$ -- 1020
+stack$ -- 0
+substring$ -- 2288
+swap$ -- 950
+text.length$ -- 328
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 732
+warning$ -- 2
+while$ -- 588
+width$ -- 0
+write$ -- 831
+(There were 3 warnings)

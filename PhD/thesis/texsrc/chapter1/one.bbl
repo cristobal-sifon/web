@@ -1,0 +1,290 @@
+\begin{thebibliography}{}
+\makeatletter
+\relax
+\def\mn@urlcharsother{\let\do\@makeother \do\$\do\&\do\#\do\^\do\_\do\%\do\~}
+\def\mn@doi{\begingroup\mn@urlcharsother \@ifnextchar [ {\mn@doi@}
+  {\mn@doi@[]}}
+\def\mn@doi@[#1]#2{\def\@tempa{#1}\ifx\@tempa\@empty \href
+  {http://dx.doi.org/#2} {doi:#2}\else \href {http://dx.doi.org/#2} {#1}\fi
+  \endgroup}
+\def\mn@eprint#1#2{\mn@eprint@#1:#2::\@nil}
+\def\mn@eprint@arXiv#1{\href {http://arxiv.org/abs/#1} {{\tt arXiv:#1}}}
+\def\mn@eprint@dblp#1{\href {http://dblp.uni-trier.de/rec/bibtex/#1.xml}
+  {dblp:#1}}
+\def\mn@eprint@#1:#2:#3:#4\@nil{\def\@tempa {#1}\def\@tempb {#2}\def\@tempc
+  {#3}\ifx \@tempc \@empty \let \@tempc \@tempb \let \@tempb \@tempa \fi \ifx
+  \@tempb \@empty \def\@tempb {arXiv}\fi \@ifundefined
+  {mn@eprint@\@tempb}{\@tempb:\@tempc}{\expandafter \expandafter \csname
+  mn@eprint@\@tempb\endcsname \expandafter{\@tempc}}}
+
+\bibitem[\protect\citeauthoryear{{Abell}}{{Abell}}{1958}]{abell58}
+{Abell} G.~O.,  1958, \mn@doi [\apjs] {10.1086/190036}, \href
+  {http://adsabs.harvard.edu/abs/1958ApJS....3..211A} {3, 211}
+
+\bibitem[\protect\citeauthoryear{{Alpher}, {Bethe}  \& {Gamow}}{{Alpher}
+  et~al.}{1948}]{alpher48}
+{Alpher} R.~A.,  {Bethe} H.,   {Gamow} G.,  1948, \mn@doi [Physical Review]
+  {10.1103/PhysRev.73.803}, \href
+  {http://adsabs.harvard.edu/abs/1948PhRv...73..803A} {73, 803}
+
+\bibitem[\protect\citeauthoryear{{Andreon}}{{Andreon}}{2015}]{andreon15}
+{Andreon} S.,  2015, \mn@doi [\aap] {10.1051/0004-6361/201526081}, \href
+  {http://adsabs.harvard.edu/abs/2015A%26A...582A.100A} {582, A100}
+
+\bibitem[\protect\citeauthoryear{{Balogh} et~al.,}{{Balogh}
+  et~al.}{2016}]{balogh16}
+{Balogh} M.~L.,  et~al., 2016, \mn@doi [\mnras] {10.1093/mnras/stv2949}, \href
+  {http://adsabs.harvard.edu/abs/2016MNRAS.456.4364B} {456, 4364}
+
+\bibitem[\protect\citeauthoryear{{Battaglia}, {Bond}, {Pfrommer}  \&
+  {Sievers}}{{Battaglia} et~al.}{2012}]{battaglia12}
+{Battaglia} N.,  {Bond} J.~R.,  {Pfrommer} C.,   {Sievers} J.~L.,  2012,
+  \mn@doi [\apj] {10.1088/0004-637X/758/2/74}, \href
+  {http://adsabs.harvard.edu/abs/2012ApJ...758...74B} {758, 74}
+
+\bibitem[\protect\citeauthoryear{{Benson} et~al.,}{{Benson}
+  et~al.}{2013}]{benson13}
+{Benson} B.~A.,  et~al., 2013, \mn@doi [\apj] {10.1088/0004-637X/763/2/147},
+  \href {http://adsabs.harvard.edu/abs/2013ApJ...763..147B} {763, 147}
+
+\bibitem[\protect\citeauthoryear{{Bleem} et~al.,}{{Bleem}
+  et~al.}{2015}]{bleem15}
+{Bleem} L.~E.,  et~al., 2015, \mn@doi [\apjs] {10.1088/0067-0049/216/2/27},
+  \href {http://adsabs.harvard.edu/abs/2015ApJS..216...27B} {216, 27}
+
+\bibitem[\protect\citeauthoryear{{Blumenthal}, {Faber}, {Primack}  \&
+  {Rees}}{{Blumenthal} et~al.}{1984}]{blumenthal84}
+{Blumenthal} G.~R.,  {Faber} S.~M.,  {Primack} J.~R.,   {Rees} M.~J.,  1984,
+  \mn@doi [\nat] {10.1038/311517a0}, \href
+  {http://adsabs.harvard.edu/abs/1984Natur.311..517B} {311, 517}
+
+\bibitem[\protect\citeauthoryear{{Colless} et~al.,}{{Colless}
+  et~al.}{2001}]{colless01}
+{Colless} M.,  et~al., 2001, \mn@doi [\mnras]
+  {10.1046/j.1365-8711.2001.04902.x}, \href
+  {http://adsabs.harvard.edu/abs/2001MNRAS.328.1039C} {328, 1039}
+
+\bibitem[\protect\citeauthoryear{{Dicke}, {Peebles}, {Roll}  \&
+  {Wilkinson}}{{Dicke} et~al.}{1965}]{dicke65}
+{Dicke} R.~H.,  {Peebles} P.~J.~E.,  {Roll} P.~G.,   {Wilkinson} D.~T.,  1965,
+  \mn@doi [\apj] {10.1086/148306}, \href
+  {http://adsabs.harvard.edu/abs/1965ApJ...142..414D} {142, 414}
+
+\bibitem[\protect\citeauthoryear{{Dressler}}{{Dressler}}{1980}]{dressler80}
+{Dressler} A.,  1980, \mn@doi [\apj] {10.1086/157753}, \href
+  {http://adsabs.harvard.edu/abs/1980ApJ...236..351D} {236, 351}
+
+\bibitem[\protect\citeauthoryear{{Einasto}}{{Einasto}}{2013}]{einasto13}
+{Einasto} J.,  2013, \mn@doi [Brazilian Journal of Physics]
+  {10.1007/s13538-013-0147-9}, \href
+  {http://adsabs.harvard.edu/abs/2013BrJPh..43..369E} {43, 369}
+
+\bibitem[\protect\citeauthoryear{{Frenk} \& {White}}{{Frenk} \&
+  {White}}{2012}]{frenk12}
+{Frenk} C.~S.,  {White} S.~D.~M.,  2012, \mn@doi [Annalen der Physik]
+  {10.1002/andp.201200212}, \href
+  {http://adsabs.harvard.edu/abs/2012AnP...524..507F} {524, 507}
+
+\bibitem[\protect\citeauthoryear{{Gladders} \& {Yee}}{{Gladders} \&
+  {Yee}}{2000}]{gladders00}
+{Gladders} M.~D.,  {Yee} H.~K.~C.,  2000, \mn@doi [\aj] {10.1086/301557}, \href
+  {http://adsabs.harvard.edu/abs/2000AJ....120.2148G} {120, 2148}
+
+\bibitem[\protect\citeauthoryear{{Gunn} \& {Gott}}{{Gunn} \&
+  {Gott}}{1972}]{gunn72}
+{Gunn} J.~E.,  {Gott} III J.~R.,  1972, \mn@doi [\apj] {10.1086/151605}, \href
+  {http://adsabs.harvard.edu/abs/1972ApJ...176....1G} {176, 1}
+
+\bibitem[\protect\citeauthoryear{{Guth}}{{Guth}}{1981}]{guth81}
+{Guth} A.~H.,  1981, \mn@doi [\prd] {10.1103/PhysRevD.23.347}, \href
+  {http://adsabs.harvard.edu/abs/1981PhRvD..23..347G} {23, 347}
+
+\bibitem[\protect\citeauthoryear{{Haines} et~al.,}{{Haines}
+  et~al.}{2013}]{haines13}
+{Haines} C.~P.,  et~al., 2013, \mn@doi [\apj] {10.1088/0004-637X/775/2/126},
+  \href {http://adsabs.harvard.edu/abs/2013ApJ...775..126H} {775, 126}
+
+\bibitem[\protect\citeauthoryear{{Haines} et~al.,}{{Haines}
+  et~al.}{2015}]{haines15}
+{Haines} C.~P.,  et~al., 2015, \mn@doi [\apj] {10.1088/0004-637X/806/1/101},
+  \href {http://adsabs.harvard.edu/abs/2015ApJ...806..101H} {806, 101}
+
+\bibitem[\protect\citeauthoryear{{Hasselfield} et~al.,}{{Hasselfield}
+  et~al.}{2013}]{hasselfield13}
+{Hasselfield} M.,  et~al., 2013, \mn@doi [\jcap]
+  {10.1088/1475-7516/2013/07/008}, \href
+  {http://adsabs.harvard.edu/abs/2013JCAP...07..008H} {7, 008}
+
+\bibitem[\protect\citeauthoryear{{Hirata} \& {Seljak}}{{Hirata} \&
+  {Seljak}}{2004}]{hirata04}
+{Hirata} C.~M.,  {Seljak} U.,  2004, \mn@doi [\prd]
+  {10.1103/PhysRevD.70.063526}, \href
+  {http://adsabs.harvard.edu/abs/2004PhRvD..70f3526H} {70, 063526}
+
+\bibitem[\protect\citeauthoryear{{Hubble}}{{Hubble}}{1925}]{hubble25}
+{Hubble} E.~P.,  1925, Popular Astronomy, \href
+  {http://adsabs.harvard.edu/abs/1925PA.....33..252H} {33}
+
+\bibitem[\protect\citeauthoryear{{Hubble}}{{Hubble}}{1929}]{hubble29}
+{Hubble} E.~P.,  1929, \mn@doi [Proceedings of the National Academy of Science]
+  {10.1073/pnas.15.3.168}, \href
+  {http://adsabs.harvard.edu/abs/1929PNAS...15..168H} {15, 168}
+
+\bibitem[\protect\citeauthoryear{{Kuhlen}, {Diemand}  \& {Madau}}{{Kuhlen}
+  et~al.}{2007}]{kuhlen07}
+{Kuhlen} M.,  {Diemand} J.,   {Madau} P.,  2007, \mn@doi [\apj]
+  {10.1086/522878}, \href {http://adsabs.harvard.edu/abs/2007ApJ...671.1135K}
+  {671, 1135}
+
+\bibitem[\protect\citeauthoryear{{Larson}, {Tinsley}  \& {Caldwell}}{{Larson}
+  et~al.}{1980}]{larson80}
+{Larson} R.~B.,  {Tinsley} B.~M.,   {Caldwell} C.~N.,  1980, \mn@doi [\apj]
+  {10.1086/157917}, \href {http://adsabs.harvard.edu/abs/1980ApJ...237..692L}
+  {237, 692}
+
+\bibitem[\protect\citeauthoryear{{Laureijs} et~al.,}{{Laureijs}
+  et~al.}{2011}]{laureijs11}
+{Laureijs} R.,  et~al., 2011, preprint, \href
+  {http://adsabs.harvard.edu/abs/2011arXiv1110.3193L} {} (\mn@eprint {arXiv}
+  {1110.3193})
+
+\bibitem[\protect\citeauthoryear{{Libeskind}, {Di Cintio}, {Knebe}, {Yepes},
+  {Gottl{\"o}ber}, {Steinmetz}, {Hoffman}  \& {Martinez-Vaquero}}{{Libeskind}
+  et~al.}{2013}]{libeskind13}
+{Libeskind} N.~I.,  {Di Cintio} A.,  {Knebe} A.,  {Yepes} G.,  {Gottl{\"o}ber}
+  S.,  {Steinmetz} M.,  {Hoffman} Y.,   {Martinez-Vaquero} L.~A.,  2013,
+  \mn@doi [\pasa] {10.1017/pasa.2013.16}, \href
+  {http://adsabs.harvard.edu/abs/2013PASA...30...39L} {30, e039}
+
+\bibitem[\protect\citeauthoryear{{Mahdavi}, {Hoekstra}, {Babul}, {Bildfell},
+  {Jeltema}  \& {Henry}}{{Mahdavi} et~al.}{2013}]{mahdavi13}
+{Mahdavi} A.,  {Hoekstra} H.,  {Babul} A.,  {Bildfell} C.,  {Jeltema} T.,
+  {Henry} J.~P.,  2013, \mn@doi [\apj] {10.1088/0004-637X/767/2/116}, \href
+  {http://adsabs.harvard.edu/abs/2013ApJ...767..116M} {767, 116}
+
+\bibitem[\protect\citeauthoryear{{Moore}, {Katz}, {Lake}, {Dressler}  \&
+  {Oemler}}{{Moore} et~al.}{1996}]{moore96}
+{Moore} B.,  {Katz} N.,  {Lake} G.,  {Dressler} A.,   {Oemler} A.,  1996,
+  \mn@doi [\nat] {10.1038/379613a0}, \href
+  {http://adsabs.harvard.edu/abs/1996Natur.379..613M} {379, 613}
+
+\bibitem[\protect\citeauthoryear{{Motl}, {Hallman}, {Burns}  \&
+  {Norman}}{{Motl} et~al.}{2005}]{motl05}
+{Motl} P.~M.,  {Hallman} E.~J.,  {Burns} J.~O.,   {Norman} M.~L.,  2005,
+  \mn@doi [\apjl] {10.1086/430144}, \href
+  {http://adsabs.harvard.edu/abs/2005ApJ...623L..63M} {623, L63}
+
+\bibitem[\protect\citeauthoryear{{Muzzin} et~al.,}{{Muzzin}
+  et~al.}{2014}]{muzzin14}
+{Muzzin} A.,  et~al., 2014, \mn@doi [\apj] {10.1088/0004-637X/796/1/65}, \href
+  {http://adsabs.harvard.edu/abs/2014ApJ...796...65M} {796, 65}
+
+\bibitem[\protect\citeauthoryear{{Nulsen}}{{Nulsen}}{1982}]{nulsen82}
+{Nulsen} P.~E.~J.,  1982, \mn@doi [\mnras] {10.1093/mnras/198.4.1007}, \href
+  {http://adsabs.harvard.edu/abs/1982MNRAS.198.1007N} {198, 1007}
+
+\bibitem[\protect\citeauthoryear{{Penzias} \& {Wilson}}{{Penzias} \&
+  {Wilson}}{1965}]{penzias65}
+{Penzias} A.~A.,  {Wilson} R.~W.,  1965, \mn@doi [\apj] {10.1086/148307}, \href
+  {http://adsabs.harvard.edu/abs/1965ApJ...142..419P} {142, 419}
+
+\bibitem[\protect\citeauthoryear{{Pereira} \& {Bryan}}{{Pereira} \&
+  {Bryan}}{2010}]{pereira10}
+{Pereira} M.~J.,  {Bryan} G.~L.,  2010, \mn@doi [\apj]
+  {10.1088/0004-637X/721/2/939}, \href
+  {http://adsabs.harvard.edu/abs/2010ApJ...721..939P} {721, 939}
+
+\bibitem[\protect\citeauthoryear{{Perlmutter} et~al.,}{{Perlmutter}
+  et~al.}{1999}]{perlmutter99}
+{Perlmutter} S.,  et~al., 1999, \mn@doi [\apj] {10.1086/307221}, \href
+  {http://adsabs.harvard.edu/abs/1999ApJ...517..565P} {517, 565}
+
+\bibitem[\protect\citeauthoryear{{Planck Collaboration}}{{Planck
+  Collaboration}}{2015a}]{planck15xiii}
+{Planck Collaboration} 2015a, preprint, \href
+  {http://adsabs.harvard.edu/abs/2015arXiv150201589P} {} (\mn@eprint {arXiv}
+  {1502.01589})
+
+\bibitem[\protect\citeauthoryear{{Planck Collaboration}}{{Planck
+  Collaboration}}{2015c}]{planck15xxiv}
+{Planck Collaboration} 2015c, preprint, \href
+  {http://adsabs.harvard.edu/abs/2015arXiv150201597P} {} (\mn@eprint {arXiv}
+  {1502.01597})
+
+\bibitem[\protect\citeauthoryear{{Planck Collaboration}}{{Planck
+  Collaboration}}{2015b}]{planck15xxvii}
+{Planck Collaboration} 2015b, preprint, \href
+  {http://adsabs.harvard.edu/abs/2015arXiv150201598P} {} (\mn@eprint {arXiv}
+  {1502.01598})
+
+\bibitem[\protect\citeauthoryear{{Riess} et~al.,}{{Riess}
+  et~al.}{1998}]{riess98}
+{Riess} A.~G.,  et~al., 1998, \mn@doi [\aj] {10.1086/300499}, \href
+  {http://adsabs.harvard.edu/abs/1998AJ....116.1009R} {116, 1009}
+
+\bibitem[\protect\citeauthoryear{{Rubin}, {Ford}  \& {.~Thonnard}}{{Rubin}
+  et~al.}{1980}]{rubin80}
+{Rubin} V.~C.,  {Ford} W.~K.~J.,   {.~Thonnard} N.,  1980, \mn@doi [\apj]
+  {10.1086/158003}, \href {http://adsabs.harvard.edu/abs/1980ApJ...238..471R}
+  {238, 471}
+
+\bibitem[\protect\citeauthoryear{{Rykoff} et~al.,}{{Rykoff}
+  et~al.}{2012}]{rykoff12}
+{Rykoff} E.~S.,  et~al., 2012, \mn@doi [\apj] {10.1088/0004-637X/746/2/178},
+  \href {http://adsabs.harvard.edu/abs/2012ApJ...746..178R} {746, 178}
+
+\bibitem[\protect\citeauthoryear{{Sarazin}}{{Sarazin}}{1986}]{sarazin86}
+{Sarazin} C.~L.,  1986, \mn@doi [Reviews of Modern Physics]
+  {10.1103/RevModPhys.58.1}, \href
+  {http://adsabs.harvard.edu/abs/1986RvMP...58....1S} {58, 1}
+
+\bibitem[\protect\citeauthoryear{{Shapley} \& {Curtis}}{{Shapley} \&
+  {Curtis}}{1921}]{shapley21}
+{Shapley} H.,  {Curtis} H.~D.,  1921, Bulletin of the National Research
+  Council, Vol.~2, Part 3, No.~11, p.~171-217, \href
+  {http://adsabs.harvard.edu/abs/1921BuNRC...2..171S} {2, 171}
+
+\bibitem[\protect\citeauthoryear{{Sif{\'o}n} et~al.,}{{Sif{\'o}n}
+  et~al.}{2013}]{sifon13}
+{Sif{\'o}n} C.,  et~al., 2013, \mn@doi [\apj] {10.1088/0004-637X/772/1/25},
+  \href {http://adsabs.harvard.edu/abs/2013ApJ...772...25S} {772, 25}
+
+\bibitem[\protect\citeauthoryear{{Sunyaev} \& {Zel'dovich}}{{Sunyaev} \&
+  {Zel'dovich}}{1972}]{sunyaev72}
+{Sunyaev} R.~A.,  {Zel'dovich} Y.~B.,  1972, Comments on Astrophysics and Space
+  Physics, \href {http://adsabs.harvard.edu/abs/1972CoASP...4..173S} {4, 173}
+
+\bibitem[\protect\citeauthoryear{{Trimble}}{{Trimble}}{1987}]{trimble87}
+{Trimble} V.,  1987, \mn@doi [\araa] {10.1146/annurev.aa.25.090187.002233},
+  \href {http://adsabs.harvard.edu/abs/1987ARA%26A..25..425T} {25, 425}
+
+\bibitem[\protect\citeauthoryear{{Trimble}}{{Trimble}}{1995}]{trimble95}
+{Trimble} V.,  1995, \mn@doi [\pasp] {10.1086/133671}, \href
+  {http://adsabs.harvard.edu/abs/1995PASP..107.1133T} {107, 1133}
+
+\bibitem[\protect\citeauthoryear{{Trimble}}{{Trimble}}{2012}]{trimble12}
+{Trimble} V.,  2012, The Observatory, \href
+  {http://adsabs.harvard.edu/abs/2012Obs...132...33T} {132, 33}
+
+\bibitem[\protect\citeauthoryear{{Trimble}}{{Trimble}}{2013}]{trimble13}
+{Trimble} V.,  2013, preprint, \href
+  {http://adsabs.harvard.edu/abs/2013arXiv1307.2289T} {} (\mn@eprint {arXiv}
+  {1307.2289})
+
+\bibitem[\protect\citeauthoryear{{Vikhlinin} et~al.,}{{Vikhlinin}
+  et~al.}{2009}]{vikhlinin09_cosmo}
+{Vikhlinin} A.,  et~al., 2009, \mn@doi [\apj] {10.1088/0004-637X/692/2/1060},
+  \href {http://adsabs.harvard.edu/abs/2009ApJ...692.1060V} {692, 1060}
+
+\bibitem[\protect\citeauthoryear{{Zwicky}}{{Zwicky}}{1933}]{zwicky33}
+{Zwicky} F.,  1933, Helvetica Physica Acta, \href
+  {http://adsabs.harvard.edu/abs/1933AcHPh...6..110Z} {6, 110}
+
+\bibitem[\protect\citeauthoryear{{de Jong} et~al.,}{{de Jong}
+  et~al.}{2015}]{dejong15}
+{de Jong} J.~T.~A.,  et~al., 2015, \mn@doi [\aap]
+  {10.1051/0004-6361/201526601}, \href
+  {http://adsabs.harvard.edu/abs/2015A%26A...582A..62D} {582, A62}
+
+\makeatother
+\end{thebibliography}

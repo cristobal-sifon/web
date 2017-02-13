@@ -1,0 +1,61 @@
+\documentclass[11pt,twoside,openright,b5paper]{book}
+%\documentclass[draft,11pt,twoside,openright,b5paper]{book}
+
+\input{packages}
+\input{definitions}
+\input{style}
+
+% \newcommand{\fig}{fig}
+
+\begin{document}
+\pagenumbering{roman}
+\setcounter{page}{1}
+\selectlanguage{english}
+
+\title{The Connection Between Mass and Light in Galaxy Clusters}
+\author{Crist\'obal Sif\'on Andalaft}
+
+\input{titlepage}
+
+\selectlanguage{english}
+
+\tableofcontents
+
+% \input{acronym}
+
+\include{chapter1/introduction}
+
+\renewcommand\thesection{\thechapter.\arabic{section}}
+\include{chapter2/chapter2}
+
+\renewcommand\thesection{\thechapter.\arabic{section}}
+\include{chapter3/chapter3}
+
+\renewcommand\thesection{\thechapter.\arabic{section}}
+\include{chapter4/chapter4}
+
+\renewcommand\thesection{\thechapter.\arabic{section}}
+\include{chapter5/chapter5}
+
+% \renewcommand\thesection{\thechapter.\arabic{section}}
+% \include{chapter6/chapter6}
+
+% \selectlanguage{dutch}
+% \include{samenvatting}
+
+% \selectlanguage{english}
+
+\bibliography{bibliography}
+
+%\selectlanguage{dutch}
+% \input curriculum
+
+%%\include publications
+%\chapter*{List of publications}
+% \addcontentsline{toc}{chapter}{List of publications}
+
+%\selectlanguage{dutch}
+\input{acknowledgements}
+
+\end{document}
+

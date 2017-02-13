@@ -1,0 +1,53 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: chapter4/four.aux
+The style file: mnras.bst
+A level-1 auxiliary file: chapter4/chapter4.aux
+Database file #1: bib4.bib
+Warning--I didn't find a database entry for "vanderburg13"
+Warning--I didn't find a database entry for "navarro95"
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--empty publisher in sersic68
+You've used 151 entries,
+            2881 wiz_defined-function locations,
+            1896 strings with 53840 characters,
+and the built_in function-call counts, 73167 in all, are:
+= -- 5902
+> -- 5586
+< -- 344
++ -- 2413
+- -- 872
+* -- 9449
+:= -- 11580
+add.period$ -- 0
+call.type$ -- 151
+change.case$ -- 302
+chr.to.int$ -- 148
+cite$ -- 152
+duplicate$ -- 3397
+empty$ -- 3331
+format.name$ -- 1362
+if$ -- 12426
+int.to.chr$ -- 4
+int.to.str$ -- 0
+missing$ -- 152
+newline$ -- 466
+num.names$ -- 1078
+pop$ -- 699
+preamble$ -- 1
+purify$ -- 604
+quote$ -- 0
+skip$ -- 1976
+stack$ -- 0
+substring$ -- 4090
+swap$ -- 2050
+text.length$ -- 604
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1356
+warning$ -- 1
+while$ -- 1150
+width$ -- 0
+write$ -- 1521
+(There were 3 warnings)

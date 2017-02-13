@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: chapter2/two.aux
+The style file: mnras.bst
+A level-1 auxiliary file: chapter2/chapter2.aux
+Database file #1: bib2.bib
+Warning--I didn't find a database entry for "rvsao"
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 41 entries,
+            2881 wiz_defined-function locations,
+            1057 strings with 28239 characters,
+and the built_in function-call counts, 19129 in all, are:
+= -- 1542
+> -- 1389
+< -- 84
++ -- 626
+- -- 198
+* -- 2510
+:= -- 2978
+add.period$ -- 0
+call.type$ -- 41
+change.case$ -- 82
+chr.to.int$ -- 38
+cite$ -- 41
+duplicate$ -- 928
+empty$ -- 945
+format.name$ -- 326
+if$ -- 3256
+int.to.chr$ -- 4
+int.to.str$ -- 0
+missing$ -- 40
+newline$ -- 136
+num.names$ -- 260
+pop$ -- 221
+preamble$ -- 1
+purify$ -- 164
+quote$ -- 0
+skip$ -- 530
+stack$ -- 0
+substring$ -- 1066
+swap$ -- 464
+text.length$ -- 170
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 369
+warning$ -- 0
+while$ -- 298
+width$ -- 0
+write$ -- 422
+(There was 1 warning)

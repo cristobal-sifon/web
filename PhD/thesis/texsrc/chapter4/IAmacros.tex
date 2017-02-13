@@ -1,0 +1,133 @@
+%%%%%%%%%%%%%%%%%%%   begin local macros %%%%%%%%%%%%%%%%%%%%
+\newcommand{\rad}{r}    % comoving radial distance
+\newcommand{\da}{d_A}   % comoving angular diameter distance
+
+\def\order{{\cal O}}
+\def\etal{{\it et al.~}}
+\def\arcsec{{\prime\prime}}
+\def\bftheta{{\mbox{\boldmath $\theta$}}}
+\def\bfkappa{{\mbox{\boldmath $\kappa$}}}
+\def\bfell{{\mbox{\boldmath $\ell$}}}
+\def\Ref{{\bf REF!!!}}
+\def\bfalpha{{\mbox{$\vec \alpha$}}}
+\def\vecx{{\mbox{\boldmath $x$}}}
+\def\hattheta{{\bf \hat \theta}}
+
+\def\d{\delta}
+\def\dt{\tilde \delta}
+\def\dD{\delta_{\rm D}}
+\def\del{\nabla}
+\def\knl{k_{n\ell}}
+\newcommand{\fore}{{\rm f}}
+
+\newcommand{\sky}{{\rm sky}}
+\newcommand{\tot}{{\rm tot}}
+\newcommand{\noise}{{\rm noise}}
+\newcommand{\Dk}{\frac{d^3{\bf k}}{\left( 2\pi \right) ^3}}
+
+\def\sm{{\rm M}_\odot}
+\def\uline#1{$\underline{\smash{\hbox{#1}}}$}
+
+\def\pc{\,{\rm pc}}
+\def\kpc{\,{\rm kpc}}
+\def\Mpc{\,{\rm Mpc}}
+\def\mpc{\,{\rm Mpc}}
+\def\HO{{100h\,{\rm km\,sec^{-1}\,Mpc^{-1}}}}
+\def\HOh{{100\,{\rm km\,sec^{-1}\,Mpc^{-1}}}}
+\def\g{\tilde g}
+\def\R{{\cal R}}
+\def\zl{z_{\rm LSS}}
+\def\zeq{z_{\rm EQ}}
+\def\he{$^4$He}
+\def\VEV#1{\left\langle #1\right\rangle}
+\def\fun#1#2{\lower3.6pt\vbox{\baselineskip0pt\lineskip.9pt
+\ialign{$\mathsurround=0pt#1\hfil##\hfil$\crcr#2\crcr\sim\crcr}}}
+\def\TBD{{\bf TBD}}
+\def\muK{\mu{\rm K}}
+\def\muk{\mu{\rm K}}
+\def\Oli#1{\noindent{\bf[$\diamondsuit$ #1]}}
+
+\def\planck{{\it Planck}}
+
+\newcommand{\half}{\ensuremath{\frac{1}{2}\,}}
+
+\newcommand{\erfc}{\ensuremath{\mbox{Erfc}}}
+
+\newcommand{\figpath}{.}
+\newcommand{\pspath}{.}
+\newcommand{\bigfigsize}{1.0}
+
+\newcommand{\re}{\mathrm{Re}}
+\newcommand{\im}{\mathrm{Im}}
+\newcommand{\rperp}{r_{\perp}}
+\newcommand{\rpara}{r_{\parallel}}
+
+\newcommand{\rv}{\mathbf{r}}
+\newcommand{\kv}{\mathbf{k}}
+\newcommand{\xv}{\mathbf{x}}
+\newcommand{\yv}{\mathbf{y}}
+\newcommand{\lv}{\boldsymbol{\ell}}
+\newcommand{\thetav}{\boldsymbol{\theta}}
+\newcommand{\ngbar}{\bar{n}_{g}}
+\newcommand{\dlnk}{d\ln k\,}
+\newcommand{\rhonfw}{\rho_{\text{NFW}}}
+\newcommand{\rvir}{r_{\text{vir}}}
+
+\newcommand{\woneh}{W^{1h}}
+\newcommand{\wtwoh}{W^{2h}}
+
+\newcommand{\cla}{C_{\text{1}}}
+\newcommand{\Dbar}{\bar{D}}
+\newcommand{\rhobar}{\bar{\rho}}
+
+\newcommand{\eplus}{\gamma_{1}}
+\newcommand{\ecross}{\gamma_{2}}
+\newcommand{\intshear}{\gamma^{I}}
+\newcommand{\Feps}{\tilde{\epsilon}}
+\newcommand{\Fvareps}{\tilde{\varepsilon}}
+\newcommand{\densshear}{\tilde{\gamma}^{I}}
+\newcommand{\nhat}{\hat{\mathbf{n}}}
+\newcommand{\phik}{\phi_k}
+\newcommand{\phiell}{\phi_{\ell}}
+\newcommand{\phil}{\phiell}
+\newcommand{\sintwophil}{\sin\left(2\phiell\right)}
+\newcommand{\costwophil}{\cos\left(2\phiell\right)}
+\newcommand{\sintwophi}{\sin\left(2\phi\right)}
+\newcommand{\costwophi}{\cos\left(2\phi\right)}
+\newcommand{\sintwophie}{\sin\left(2\phi_e\right)}
+\newcommand{\costwophie}{\cos\left(2\phi_e\right)}
+
+
+\newcommand{\xperp}{x_{\perp}}
+\newcommand{\xperpv}{\mathbf{x}_{\perp}}
+\newcommand{\kappav}{\boldsymbol{\kappa}}
+\newcommand{\kpara}{k_{\parallel}}
+
+\newcommand{\nbar}{\bar{n}}
+\newcommand{\Nbars}{\bar{N}_s}
+\newcommand{\Nbarc}{\bar{N}_c}
+\newcommand{\Nbarstwo}{\bar{N}^{(2)}_s}
+\newcommand{\ebars}{\ebar^{\text{sat}}}
+\newcommand{\ebarc}{\ebar^{\text{cen}}}
+\newcommand{\ebareff}{\ebar_{\text{scale}}}
+\newcommand{\dlin}{\delta^{\text{lin}}}
+
+\newcommand{\av}{\mathbf{a}}
+\newcommand{\epsv}{\boldsymbol{\mathcal{E}}}
+\newcommand{\alphae}{\alpha_{\mathcal{E}}}
+\newcommand{\betae}{\beta_{\mathcal{E}}}
+\newcommand{\gammae}{\gamma_{\mathcal{E}}}
+
+\newcommand{\Pgi}{P_{\densshear}}
+\newcommand{\fA}{\chi}
+\newcommand{\satcenalign}{A_{s}}
+\newcommand{\eeff}{$\ebar_{\text{scale}}\,$}
+\newcommand{\eeffmath}{\ebar_{\text{scale}}\,}
+
+% elliptical halos
+% \newcommand{\av}{\mathbf{a}}
+% \newcommand{\epsv}{\boldsymbol{\mathcal{E}}}
+% \newcommand{\alphae}{\alpha_{\mathcal{E}}}
+% \newcommand{\betae}{\beta_{\mathcal{E}}}
+% \newcommand{\gammae}{\gamma_{\mathcal{E}}}
+\newcommand{\ebar}{\bar{\gamma}}

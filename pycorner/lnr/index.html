@@ -1,0 +1,238 @@
+<html>
+<head>
+  <meta name="AUTHOR" content="Crist&oacute;bal Sif&oacute;n Andalaft">
+  <title>Linear regression in python by Crist&oacute;bal Sif&oacute;n</title>
+
+<style>
+a
+{
+  color: blue;
+  font-family: sans-serif;
+}
+body
+{
+  background: silver;
+  color: black;
+  font-family: sans-serif;
+}
+hr
+{
+  width: 50%;
+}
+code.title
+{
+  margin-bottom:20pt;
+  margin-left: 25%;
+  float: left;
+  font-size: 60;
+  font-weight: 900;
+  text-align: left;
+  width:100%;
+}
+dl.help
+{
+  width: 100%;
+  text-align: justify;
+}
+img.example
+{
+  border: 0;
+  margin-bottom: 10pt;
+  margin-top: 10pt;
+  width:100%;
+}
+table.htable
+{
+  text-align: center;
+  width: 50%;
+  border: 1;
+  background: gray;
+}
+/* Header Links */
+.hlink a:link {font-weight: bold;
+               color: blue;
+               text-decoration: none;}
+.hlink a:visited {font-weight: bold;
+                  color: blue;
+                  text-decoration: none;}
+.hlink a:hover {background: gray;
+                color: white;
+                font-weight: bold;
+                text-decoration: none;}
+.hlink a:active {font-weight: bold;
+                 color: blue;
+                 text-decoration: none;}
+</style>
+</head>
+
+
+<body>
+ <center>
+
+<!--  HEADER  -->
+  <hr>
+  <span class="hlink">
+  <table class="htable">
+    <td style="text-align:center;width:25%">
+      <a href="http://www.strw.leidenuniv.nl/~sifon/">
+      Home</a>
+    </td>
+    <td style="text-align:center;width:25%">
+      <a href="http://www.strw.leidenuniv.nl/~sifon/research.html">
+      Research</a>
+    </td>
+    <td style="text-align:center;width:25%">
+      <a href="http://www.strw.leidenuniv.nl/~sifon/pycorner.html">
+      Python Corner</a>
+    </td>
+    <td style="text-align:center;width:25%">
+      <a href="http://www.strw.leidenuniv.nl/~sifon/links.html">
+      Useful Links</a>
+    </td>
+  </table>
+  </span>
+  <hr>
+
+  <p><code class="title">lnr</code></p>
+
+  <p style="font-weight:bold;text-align:left;margin-left:27.5%">
+    <a href="lnr.py">Download</a>
+  </p>
+
+  <table style="width:50%;float:center">
+    <tr>
+      <td style="width:100%">
+        <p style="text-align:justify">
+          <code><strong>lnr</strong></code> is a module that
+          implements various linear regression techniques. All of them
+          account for measurement uncertainties in both variables and
+          intrinsic scatter. The available functions are:
+          <ul>
+              <li><code><b>lnr.bces()</b></code><br>
+                All the BCES linear regression methods described in
+                <a href="http://adsabs.harvard.edu/abs/1996ApJ...470..706A">Akritas
+                &amp; Bershady (1996, ApJ, 470, 706)</a>. BCES stands for 
+                Bivariate, Correlated Errors and intrinsic Scatter.
+                The original Fortran code can be downloaded
+                <a href="http://www.astro.wisc.edu/~mab/archive/stats/stats.html">
+                here</a>. <b>Thanks to
+                <a href="http://www.astro.uni-bonn.de/m/schellen/home/">Gerrit
+                Schellenberger</a> for speeding up the bootstrap resampling.</b></li>
+              <li><code><b>lnr.mle()</b></code><br>
+                A Maximum Likelihood Estimator</li>
+              <li><code><b>lnr.mcmc()</b></code><br>
+                A simple Markov Chain Monte Carlo (MCMC) implemented with
+                <a href="http://dan.iel.fm/emcee/current/"><code>emcee</code></a>.
+              <li><code><b>lnr.kelly()</b></code><br>
+                A python wrapper of the widely used MCMC developed by
+                <a href="http://idlastro.gsfc.nasa.gov/ftp/pro/math/linmix_err.pro">
+                Brandon Kelly in IDL</a>. This method is described in
+                <a href="http://adsabs.harvard.edu/abs/2007ApJ...665.1489K">
+                Kelly (2007, ApJ, 665, 1489)</a>.</li>
+          </ul>
+            
+
+<!--   USAGE   -->
+        <p style="font-weight:bold;text-align:left;margin-left:5%">Usage:</p>
+        <p style="text-align:left;margin-left:10%">
+          Put the file in your python path. Then, in a python code,
+        </p>
+        <p style="margin-left:13%"><code>&gt; import lnr</code></p>
+        <p style="text-align:left;margin-left:10%">
+          For help, type
+        </p>
+        <p style="margin-left:13%"><code>&gt; help(lnr.bces)</code></p>
+        <p style="text-align:left;margin-left:10%">
+          To estimate the best-fit linear regression using BCES,
+        </p>
+        <p style="margin-left:13%">
+          <code>&gt; fit = lnr.bces(x1, x2, *optional_args)</code>
+        </p>
+        <p style="text-align:left;margin-left:10%">
+        See the python help for calls to other functions. Below is the full
+        description of the BCES function.
+        </p>
+
+      <hr style="width:20%;float:left"><br></hr>
+
+      <font style="margin-left:2%">Arguments:</font>
+      <br>
+      <dl class="help">
+        <dt><code><strong>x1</strong></code>
+          <dd><code>type: </code> float array
+          <dd><code>parameter: </code>The independent variable or observable.
+        <dt><code><strong>x2</strong></code>
+          <dd><code>type: </code> float array
+          <dd><code>parameter: </code>The dependent variable.
+      </dl>
+
+      <font style="margin-left:2%">Optional:</font>
+      <br>
+      <dl class="help">
+        <dt><code><strong>x1err</strong></code>
+          <dd><code>type: </code> float array
+          <dd><code>parameter: </code>Uncertainties on the observable.
+        <dt><code><strong>x1err</strong></code>
+          <dd><code>type: </code> float array
+          <dd><code>parameter: </code>Uncertainties on the dependent variable.
+        <dt><code><strong>cerr</strong></code>
+          <dd><code>type: </code> float array
+          <dd><code>parameter: </code>Covariance on the measurement errors, for
+            each data point.
+        <dt><code><strong>model</strong></code>
+          <dd><code>type: </code> string
+          <dd><code>default: </code>'yx'
+          <dd><code>parameter: </code>BCES model with which to calculate
+            regression. Options are {'yx', 'xy', 'bi', 'orth'}. See python
+            help page for details.
+        <dt><code><strong>bootstrap</strong></code>
+          <dd><code>type: </code> int or False
+          <dd><code>default: </code>5000
+          <dd><code>parameter: </code>Whether to estimate the uncertainties in
+            the best-fit parameters with bootstrap resampling, and with how many
+            resamplings.
+        <dt><code><strong>verbose</strong></code>
+          <dd><code>type: </code> str
+          <dd><code>default: </code>'normal'
+          <dd><code>parameter: </code>The verbose level. Options are
+            {'quiet', 'normal', 'debug'}.
+        <dt><code><strong>full_output</strong></code>
+          <dd><code>type: </code> boolean
+          <dd><code>default: </code>True
+          <dd><code>parameter: </code>If True, return the covariance matrix
+            of the best-fit parameters in addition to the best-fit normalization
+            and slope. See below.
+      </dl>
+
+      <hr style="width:20%;float:left"><br></hr>
+
+      <font style="margin-left:2%">Returns:</font>
+      <br>
+      <dl class="help">
+        <dt><code><strong>a</strong></code>
+          <dd><code>type: </code> tuple of length 2
+          <dd><code>parameter: </code>Best-fit normalization and its
+            uncertainty.
+        <dt><code><strong>b</strong></code>
+          <dd><code>type: </code> tuple of length 2
+          <dd><code>parameter: </code>Best-fit slope and its uncertainty.
+      </dl>
+
+      <font style="margin-left:2%">Optional:</font>
+      <br>
+      <dl class="help">
+        <dt><code><strong>cov_ab</strong></code>
+          <dd><code>type: </code> 2x2 array of floats
+          <dd><code>parameter: </code>Covariance matrix of the best-fit
+            parameters
+      </dl>
+  </table>
+
+<hr>
+<p style="bold;text-align:left;margin-left:25%">
+(c) Crist&oacute;bal Sif&oacute;n<br>
+Last Updated September 5, 2014
+
+ </center>
+</body>
+</html>

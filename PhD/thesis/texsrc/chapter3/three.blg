@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: chapter3/three.aux
+The style file: mnras.bst
+A level-1 auxiliary file: chapter3/chapter3.aux
+Database file #1: bib3.bib
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 137 entries,
+            2881 wiz_defined-function locations,
+            1785 strings with 70108 characters,
+and the built_in function-call counts, 63902 in all, are:
+= -- 5196
+> -- 4686
+< -- 240
++ -- 2103
+- -- 672
+* -- 8422
+:= -- 9964
+add.period$ -- 0
+call.type$ -- 137
+change.case$ -- 274
+chr.to.int$ -- 129
+cite$ -- 137
+duplicate$ -- 3071
+empty$ -- 3093
+format.name$ -- 1074
+if$ -- 10851
+int.to.chr$ -- 9
+int.to.str$ -- 0
+missing$ -- 137
+newline$ -- 424
+num.names$ -- 882
+pop$ -- 702
+preamble$ -- 1
+purify$ -- 548
+quote$ -- 0
+skip$ -- 1741
+stack$ -- 0
+substring$ -- 3612
+swap$ -- 1628
+text.length$ -- 553
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1233
+warning$ -- 0
+while$ -- 991
+width$ -- 0
+write$ -- 1392

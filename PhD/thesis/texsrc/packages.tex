@@ -1,0 +1,87 @@
+%In this file: all the LaTeX packages you need to use.
+
+% \usepackage{epsfig}
+% \usepackage{subfig}
+
+\usepackage{afterpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{appendix}
+\usepackage{bm}
+\usepackage{caption}
+\usepackage{changepage}
+\usepackage{color}
+% \usepackage{blindtext}
+% for captions next to figures
+% \usepackage{floatrow}
+\usepackage{flushend}
+\usepackage[no-math]{fontspec}
+\usepackage{footnote}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{pdflscape}
+% \usepackage{sidecap}
+\usepackage{tablefootnote}
+\usepackage{titlesec}
+\usepackage{titling}
+% gives error with $\sim$ in title of chapter 4
+% \usepackage{unicode-math}
+\usepackage{url}
+
+% Must go after hyperref
+\usepackage[capitalize,nameinlink]{cleveref}
+% cleveref tweak to remove parentheses from equations
+\creflabelformat{equation}{#2#1#3}
+\crefrangelabelformat{equation}{#3#1#4 to #5#2#6}
+
+% set default for all fonts (not default in fontspec)
+\defaultfontfeatures{Ligatures=TeX}
+
+% For links of references
+\hypersetup{colorlinks,
+    linkcolor=black,
+    filecolor=black,
+    urlcolor=black,
+    citecolor=black}
+
+% Table columns with fixed width
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+%%%% Bibliography
+\newcounter{dummy}
+\def\thebibliography#1{\section*{REFERENCES}
+ \addcontentsline{toc}{section}{REFERENCES}
+ \list{}{\usecounter{dummy}%
+         \labelwidth\z@
+         \leftmargin 1.5em
+         \itemsep \z@
+         \itemindent-\leftmargin}
+ \reset@font\small
+ \parindent\z@
+ \parskip\z@ plus .1pt\relax
+ \def\newblock{\hskip .11em plus .33em minus .07em}
+ \sloppy\clubpenalty4000\widowpenalty4000
+ \sfcode`\.=1000\relax
+}
+\let\endthebibliography=\endlist
+\def\@biblabel#1{\hspace*{\labelsep}[#1]}
+
+\def\newblock{\hskip .11em plus .33em minus .07em}
+\usepackage[authoryear]{natbib}
+\setlength{\bibsep}{0.1em}
+\bibpunct{(}{)}{;}{a}{}{,}
+\renewcommand\bibfont{\small}
+\renewcommand\bibname{BIBLIOGRAPHY}
+\renewcommand\refname{REFERENCES}
+%%%%%%%%%%%%%%%%%
+
+\usepackage{fancyhdr}
+\usepackage{polyglossia}
+%\usepackage[final]{hyperref}
+%\usepackage[printonlyused,withpage]{acronym}
+%\usepackage[printonlyused]{acronym}
